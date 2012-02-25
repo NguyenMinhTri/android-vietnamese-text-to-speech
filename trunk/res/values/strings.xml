@@ -3,5 +3,11 @@
 
     <string name="hello">Hello World, VietnameseTTSMini2440Activity!</string>
     <string name="app_name">VietnameseTTSMini2440</string>
-
+	<string name="hint_edittext">Gõ tiếng Việt vào đây..</string>
+	<string name="submit_button">Submit</string>
+	<string name="choose_button">Chọn file</string>
+	<string name="checkbox">Nhập text</string>
+	<string name="play_button">Play</string>
+	<string name="stop_button">Stop</string>
+	<string name="exit_button">Thoát</string>
 </resources>
