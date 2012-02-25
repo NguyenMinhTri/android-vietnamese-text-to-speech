@@ -1,12 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="240dp"
+    android:layout_height="320dp"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
-
+    //thanh dau tien theo chieu ngang chua mot TextView
+   
+      
+    <LinearLayout  
+        android:layout_width="fill_parent" 
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+        
+        <EditText
+            android:id="@+id/Input"
+            android:gravity="top"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:hint="@string/hint_edittext"
+            android:background="@color/background_color"
+            android:textSize="15dp"
+            android:scrollbars="vertical"
+            />  
+    </LinearLayout>
+    
+    //thanh thu 2 co 2 nut va mot check box
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="50dp" 
+        android:orientation="horizontal" 
+        > 
+        <Button
+          android:id="@+id/submit"
+          android:layout_width="75dp"
+          android:layout_height="wrap_content"
+          android:text="@string/submit_button"
+          android:textSize="10dp"
+          />
+        <Button 
+            android:id="@+id/Choose"
+            android:text="@string/choose_button"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp" 
+            android:textSize="10dp"
+            />
+        <CheckBox 
+            android:id="@+id/Get_text"
+            android:text="@string/checkbox"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            />"
+    </LinearLayout>
+        
+    
+    
+    //thnh thu 3
+     <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="75dp" 
+        android:orientation="horizontal"
+        >
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@color/background_color"
+            android:scrollbars="vertical"
+            />
+    </LinearLayout>
+    
+     //thanh thu 4 co mot thanh truot
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="30dp" 
+        android:orientation="horizontal"  
+        >
+        <SeekBar
+            android:id="@+id/Loading_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            />
+    </LinearLayout>
+    
+    //thanh thu 5 co 3 nut bam va mot thanh truot
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="50dp" 
+        android:orientation="horizontal"
+        >
+        <Button 
+          android:id="@+id/play"
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:text="@string/play_button"
+          android:textSize="10dp"
+          />
+        <Button 
+          android:id="@+id/stop"
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:text="@string/stop_button"
+          android:textSize="10dp"
+          />
+        <Button 
+          android:id="@+id/exit"
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:text="@string/exit_button"
+          android:textSize="10dp"    
+          />
+    </LinearLayout>
+    
 </LinearLayout>
